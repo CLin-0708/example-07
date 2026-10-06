@@ -2,10 +2,80 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=showcase.html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>example-07 案例复现导航</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+    h1 {
+      font-size: 24px;
+      color: #38bdf8;
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: #94a3b8;
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 20px;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      display: block;
+    }
+    .card:hover {
+      border-color: #38bdf8;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
+    }
+    .card h2 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      color: #f1f5f9;
+    }
+    .card p {
+      margin: 0;
+      font-size: 13px;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body>
-  <p>正在跳转至 <a href="showcase.html">Three.js 旋转展示台</a>...</p>
+  <div class="container">
+    <h1>第七次作业 · 案例复现仓库 (example-07)</h1>
+    <p class="subtitle">点击下方卡片即可进入对应的三维案例页面：</p>
+    <div class="card-list">
+      <a class="card" href="showcase.html">
+        <h2>案例一：Three.js 旋转展示台</h2>
+        <p>包含圆柱底座、3个几何展品绕台缓转动画、双光源系统、OrbitControls鼠标拖拽交互与窗口自适应。</p>
+      </a>
+      <a class="card" href="campus.html">
+        <h2>案例二：A-Frame 校园角标主题小场景</h2>
+        <p>包含天空、草地、教学楼实体、红旗飘动动画、脉动呼吸路灯点光源，以及WASD漫游巡视。</p>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
