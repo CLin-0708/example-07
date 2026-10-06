@@ -49,10 +49,20 @@
       transform: translateY(-2px);
       box-shadow: 0 8px 20px rgba(56, 189, 248, 0.15);
     }
+    .card.exp {
+      border-color: rgba(239, 83, 80, 0.4);
+    }
+    .card.exp:hover {
+      border-color: #ef5350;
+      box-shadow: 0 8px 20px rgba(239, 83, 80, 0.2);
+    }
     .card h2 {
       margin: 0 0 8px 0;
       font-size: 18px;
       color: #f1f5f9;
+    }
+    .card.exp h2 {
+      color: #ff8a80;
     }
     .card p {
       margin: 0;
@@ -74,6 +84,10 @@
       <a class="card" href="campus.html">
         <h2>案例二：A-Frame 校园角标主题小场景</h2>
         <p>包含天空、草地、教学楼实体、红旗飘动动画、脉动呼吸路灯点光源，以及WASD漫游巡视。</p>
+      </a>
+      <a class="card exp" href="experiment.html">
+        <h2>讲义指定故意实验：相机进物体内部与独立Mesh旋转对比</h2>
+        <p>讲义要求对比：将相机设为原点(0,0,0)内部观察穿模现象，以及将Group公转改为逐个遍历children原地自转对比代码量与运动轨迹。</p>
       </a>
     </div>
   </div>
